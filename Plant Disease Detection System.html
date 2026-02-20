@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #4CAF50, #2E7D32); /* Green gradient for natural theme */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #home {
+            background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Example background image of plant seedlings */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #home .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        .main-heading {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subheading {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .supporting-text {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .upload-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .upload-button:hover {
+            background-color: #45a049;
+        }
+        #about, #use-us, #learn-more, #contact {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        #about h2, #use-us h2, #learn-more h2, #contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        #about p, #use-us p, #learn-more p, #contact p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 36px;
+            }
+            .subheading {
+                font-size: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">Plant Disease Detection System</div>
+        <nav>
+            <ul>
+                <li><a href="#login">login</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#use-us">Use Us</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1 class="main-heading">Welcome To Plant Disease Detection System</h1>
+            <h2 class="subheading">Guidance to any type of Plant Diseases</h2>
+            <p class="supporting-text">Developing a new model in this smart era, to reduce the burden of farmers and to increase the yield with great solutions.</p>
+            <a href="upload.html" class="upload-button">Upload Image for Detection</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our Plant Disease Detection System leverages cutting-edge AI and machine learning technology to help farmers identify plant diseases early and accurately. By analyzing images of plants, we provide quick diagnoses and recommendations, empowering farmers to protect their crops and boost productivity. Join us in revolutionizing agriculture for a sustainable future.</p>
+    </section>
+
+    <section id="use-us">
+        <h2>Use Us</h2>
+        <p>Getting started is easy! Simply upload a photo of your plant using our detection tool. Our system will analyze the image and provide instant feedback on potential diseases, along with tips for treatment and prevention. Whether you're a farmer, gardener, or enthusiast, our user-friendly interface makes plant health monitoring accessible to everyone.</p>
+    </section>
+
+    <section id="learn-more">
+        <h2>Learn More</h2>
+        <p>Dive deeper into how our AI works. We use advanced algorithms trained on thousands of plant images to detect diseases like blight, rust, and mildew. Explore case studies, research papers, and tutorials on sustainable farming practices. Stay informed and empowered with our resources designed to enhance your agricultural knowledge.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need support? Reach out to our team at support@plantdiseasedetection.com or call us at (123) 456-7890. We're here to help you make the most of our system and ensure your plants thrive. Follow us on social media for updates and tips!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Plant Disease Detection System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
